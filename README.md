@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4
 
+## Clone the repo
+   git clone https://github.com/iqbalbcis/case-management-systems-frontend.git 
+
 -> npm config set legacy-peer-deps true
 -> npm cache clean --force
 -> npm install
