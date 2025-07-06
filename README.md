@@ -1,6 +1,6 @@
-# LawFirmMainapplication
+# Case Management Systems Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4
 
 -> npm config set legacy-peer-deps true
 -> npm cache clean --force
