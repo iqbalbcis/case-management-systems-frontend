@@ -1,7 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
-import { AUTHENTICATED_USER } from './app.constants';
 
 @Component({
   selector: 'app-root',

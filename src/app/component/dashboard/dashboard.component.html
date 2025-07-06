@@ -1,23 +1,33 @@
-<div class="mt-1 card divwidth">
-  <h4 class="card-header">Client Related Services</h4>
-  <div class="card-body">
-    <button type="button" class="btn btn-info" routerLink ="/clientregistration">Register Client</button>
-    <button type="button" class="btn btn-info" routerLink ="/client-searchforall">Find A Client's Summary</button>
-  </div>
+<h3 class="mt-2 p-3 text-center bg-success text-white">All Case Records</h3>
+<div class="mt-1 container table-responsive full-height">
+  <table class="mt-1 table-bordered tableFormatter center oddrowcolor">
+    <thead>
+      <tr>
+          <th>Case Id</th>
+          <th>Title</th>
+          <th>Case Description</th>
+          <th>Status</th>
+          <th>Due Date and Time</th>
+          <th>View</th>
+          <th>Update</th>
+          <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cs of caseList">
+        <td>{{cs.caseId}}</td>
+        <td>{{cs.title}}</td>
+        <td>{{cs.description}}</td>
+        <td>{{cs.status}}</td>
+        <td>{{globalService.convertArrayToDate(cs.dueDateTime) | date: 'dd/MM/yyy HH:mm' }}</td>
+        <td><button (click)="viewCaseById(cs.caseId)" class="btn btn-success">View</button></td>
+        <td><button (click)="updateCaseById(cs.caseId)" class="btn btn-primary">Update</button></td>
+        <td><button (click)="deleteCaseById(cs.caseId)" class="btn btn-danger">Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
 </div>
 
-
-<div class="mt-1 card divwidth">
-  <h4 class="card-header">All Reports</h4>
-  <div class="card-body">
-    <button type="button" class="btn btn-info" routerLink = "/namereport">Find Record using Name, File Ref and FE</button>
-    <button type="button" class="btn btn-info" routerLink = "/datereport">Find Record using Start Date and DOB</button>
-    <button type="button" class="btn btn-info" routerLink = "/betweendatereport">Find Record using Between Date</button>
-    <button type="button" class="btn btn-info" routerLink = "/categoryreport">Find Record using Category</button>
-    <button type="button" class="btn btn-info" routerLink = "/categoryfereport">Find Record using Category and FE</button>
-  </div>
-</div>
-
-<div class = "text-center divwidth">
-  <a routerLink ="/dashboard" (click)= "goToTheTop()"> Go to the top</a>
+<div class = "mt-2 text-center">
+  <a routerLink ="" (click)= "goToTheTop()"> Go to the top</a>
 </div>

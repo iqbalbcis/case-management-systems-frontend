@@ -16,6 +16,9 @@ import { ErrorComponent } from './component/error/error.component';
 import { SpinnerComponent } from './component/spinner/spinner.component';
 import { SpinnerInterceptorService } from './service/interceptor/spinner-interceptor.service';
 import { AlertComponent } from './component/alert/alert.component';
+import { CreateCaseComponent } from './component/create-case/create-case.component';
+import { ViewCaseComponent } from './component/view-case/view-case.component';
+import { UpdateCaseComponent } from './component/update-case/update-case.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { AlertComponent } from './component/alert/alert.component';
     DashboardComponent,
     ErrorComponent,
     SpinnerComponent,
-    AlertComponent
+    AlertComponent,
+    CreateCaseComponent,
+    ViewCaseComponent,
+    UpdateCaseComponent
   ],
   imports: [
     BrowserModule,

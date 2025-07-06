@@ -1,7 +1,6 @@
 import { Component, Inject, OnInit} from '@angular/core';
 import { Subscription } from 'rxjs/internal/Subscription';
 import { interval } from 'rxjs/internal/observable/interval';
-import { TOKEN } from 'src/app/app.constants';
 
 @Component({
   selector: 'app-menuandheader',
@@ -17,5 +16,5 @@ export class MenuandheaderComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  
+
 }

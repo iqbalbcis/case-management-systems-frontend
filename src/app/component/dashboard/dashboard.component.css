@@ -1,23 +1,42 @@
-.divwidth
-{
-  max-width: 455px;
-  margin: auto;
-}
-button {
-  height: 60px;
-  width: 200px;
-  text-align: center;
-  margin: 3px;
+label {
   font-weight: 500;
 }
-button:hover {
-  background-color: #e7e7e7;
-  color: black;
+
+button{
+  width: 100px;
 }
 
-@media only screen and (max-width: 455px) {
-  /* For mobile phones: */
-  h4{
-    max-width: 350px;
-  }
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* table css for even row */
+table.oddrowcolor tr:nth-child(odd) {
+	/* background-color: #f1f1c1; */
+	background-color: rgba(213, 232, 255, 0.781);
+}
+
+/* table css */
+table.tableFormatter
+{
+	/* border: 1px solid black; */
+	border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+table.tableFormatter th, td {
+
+	padding: 5px;
+  text-align: center;
+}
+
+table.tableFormatter th {
+
+	background-color: #0051ff;
+	color: white;
+}
+
+table.tableFormatter tr:hover {
+	background-color: #f8d39a;
 }
